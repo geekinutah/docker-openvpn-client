@@ -4,7 +4,7 @@ MAINTAINER Mike Wilson <geekinutah@gmail.com>
 ENV TERM=xterm-256color
 
 RUN apt-get -q update >/dev/null \
-  && apt-get install -y openvpn
+  && apt-get install -y openvpn \
 
   # Cleanup
   && apt-get clean autoclean \
